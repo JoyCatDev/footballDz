@@ -1,0 +1,853 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &117866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 484934}
+  - component: {fileID: 11427922}
+  - component: {fileID: 11432206}
+  - component: {fileID: 14308362}
+  - component: {fileID: 11477472}
+  m_Layer: 9
+  m_Name: Player (purple P1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &484934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.53, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 473352}
+  - {fileID: 405958}
+  - {fileID: 484794}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11427922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6e9b3fdb518dc8479ff910a9ee8837c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: purple p1
+  firstName: 
+  lastName: 
+  preferredName: 
+  shortName: 
+  name3Letters: 
+  gender: 1
+  age: 0
+  jerseyNumber: 0
+  headHeight: 1.8
+  positionProperties:
+  - position: 0
+    ai: {fileID: 0}
+  - position: 1
+    ai: {fileID: 0}
+  - position: 2
+    ai: {fileID: 0}
+  meshChildOrPrefab: {fileID: 100028, guid: 2ea668d38ae892a438f339edc63be4b1, type: 3}
+  meshOffsetPosition: {x: 0, y: 0, z: 0}
+  meshOffsetRotation: {x: 0, y: 0, z: 0}
+  ballCollider: {fileID: 6559692}
+  ballDiveCollider: {fileID: 0}
+  playerCollider: {fileID: 6567882}
+  visibilityCollider: {fileID: 0}
+  fakeShadowPrefab: {fileID: 0}
+--- !u!114 &11432206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15d94bc52c75614d9ef972e92440b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runtimeAnimatorController: {fileID: 9100000, guid: 9b7dcdef6710a154d93093c69b3fa465,
+    type: 2}
+  crossFadeTime: 0.2
+  mediumKickDistance: 10
+  farKickDistance: 30
+  gkMediumThrowDistance: 10
+  gkFarThrowDistance: 30
+  animationProperties:
+  - animationName: kick_near
+    state: 2
+    attachBallTo: 
+    attachBallOffset: {x: 0, y: 0, z: 0}
+    attachBallRadiusDir: {x: 0, y: 0, z: 0}
+    releaseBallTime: 0.1
+  - animationName: kick_medium
+    state: 3
+    attachBallTo: 
+    attachBallOffset: {x: 0, y: 0, z: 0}
+    attachBallRadiusDir: {x: 0, y: 0, z: 0}
+    releaseBallTime: 0.3
+  - animationName: kick_far
+    state: 4
+    attachBallTo: 
+    attachBallOffset: {x: 0, y: 0, z: 0}
+    attachBallRadiusDir: {x: 0, y: 0, z: 0}
+    releaseBallTime: 0.3
+  - animationName: throw_in_hold
+    state: 9
+    attachBallTo: hand_R
+    attachBallOffset: {x: -0.349, y: 0, z: -0.101}
+    attachBallRadiusDir: {x: 0, y: 0, z: -1}
+    releaseBallTime: 0
+  - animationName: throw_in
+    state: 10
+    attachBallTo: 
+    attachBallOffset: {x: 0, y: 0, z: 0}
+    attachBallRadiusDir: {x: 0, y: 0, z: 0}
+    releaseBallTime: 0.6
+  - animationName: in_pain
+    state: 8
+    attachBallTo: 
+    attachBallOffset: {x: 0, y: 0, z: 0}
+    attachBallRadiusDir: {x: 0, y: 0, z: 0}
+    releaseBallTime: 0
+  - animationName: header
+    state: 12
+    attachBallTo: 
+    attachBallOffset: {x: 0, y: 0, z: 0}
+    attachBallRadiusDir: {x: 0, y: 0, z: 0}
+    releaseBallTime: 0
+  - animationName: slide_tackle
+    state: 6
+    attachBallTo: 
+    attachBallOffset: {x: 0, y: 0, z: 0}
+    attachBallRadiusDir: {x: 0, y: 0, z: 0}
+    releaseBallTime: 0
+  - animationName: falling
+    state: 7
+    attachBallTo: 
+    attachBallOffset: {x: 0, y: 0, z: 0}
+    attachBallRadiusDir: {x: 0, y: 0, z: 0}
+    releaseBallTime: 0
+  - animationName: bicycle_kick
+    state: 11
+    attachBallTo: 
+    attachBallOffset: {x: 0, y: 0, z: 0}
+    attachBallRadiusDir: {x: 0, y: 0, z: 0}
+    releaseBallTime: 0
+  - animationName: goal_celebration
+    state: 25
+    attachBallTo: 
+    attachBallOffset: {x: 0, y: 0, z: 0}
+    attachBallRadiusDir: {x: 0, y: 0, z: 0}
+    releaseBallTime: 0
+  - animationName: own_goal
+    state: 26
+    attachBallTo: 
+    attachBallOffset: {x: 0, y: 0, z: 0}
+    attachBallRadiusDir: {x: 0, y: 0, z: 0}
+    releaseBallTime: 0
+--- !u!143 &14308362
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117866}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1.6
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.8, z: 0}
+--- !u!114 &11477472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f06d7f4bcc844041bbf7c979513039a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  use2dAudio: 1
+  audioVolume: 1
+  slideTackle: {fileID: 8300000, guid: afa641e529f43314e853a93300fbb9e9, type: 3}
+  fall: {fileID: 8300000, guid: bc5d1f644fc5ab345b1285d21a9bc56a, type: 3}
+--- !u!1 &124276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 405958}
+  - component: {fileID: 6567882}
+  m_Layer: 9
+  m_Name: Player Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &405958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124276}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484934}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6567882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 2.5, z: 0.7}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!1 &137716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 472918}
+  - component: {fileID: 11417888}
+  m_Layer: 9
+  m_Name: AI Team - Easy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &472918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484794}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11417888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c44cbc66954d8484a96a53fef6039e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: AI Team - Easy
+  whenToUseSkill: 4
+  useForDifficulty: 0
+  runSpeed: 6
+  sprintSpeed: 8.5
+  sprintAnimationSpeedScale: 2
+  runFromGoalkeeperSpeed: 12
+  slideTackleSpeed: 7
+  diveSpeed: 10
+  maxDiveUpSpeed: 7
+  turnSpeed: 370
+  maxShootSpeed: 25
+  maxPassSpeed: 18
+  maxHeaderSpeed: 20
+  maxThrowSpeed: 20
+  canPassWithinAngle: 70
+  passBadChance: 20
+  passAccuracyRadius: 2
+  chanceRandomAimAtGoal: 10
+  chanceShootFromOwnGoal: 0
+  chanceShootFromHalfway: 5
+  chanceShootFromZone6: 10
+  chanceShootBeforeZone8: 25
+  shootBadChance: 0
+  shootAccuracyRadius: 0
+  canSlideTackle: 1
+  slideTackleDistance: 3
+  startSlideDistance: 10
+  validSlideAngle: 90
+  canGetBallWhileSliding: 1
+  canChangeSlideDirection: 0
+  canSlideGoalkeeperWithBall: 0
+  diveHangTime: 0.1
+  maxDiveDistance: 5
+  diveIntervals: 0.1
+  nextDiveDelay: 1
+  humanChanceDiveSave: 90
+  chanceGoalkeeperPunchBack: 10
+  chanceGoalkeeperPunchForward: 20
+  ballDribbleDistanceMin: 0.5
+  ballDribbleDistanceMax: 1.5
+  ballDribbleSideDistance: 0.2
+  ballDribbleKickSpeed: 15
+  lieOnGroundDuration: 1
+  ai:
+    shootPastZone: 5
+    ignoreAngleWhenShooting: 0
+    chanceShootInGoalArea: 100
+    canShootIfForemostPlayer: 0
+    chancePassToForemostPlayer: 20
+    shootDelayMin: 0.5
+    shootDelayMax: 1
+    holdBallBeforePassTime: 1.5
+    alwaysPassForward: 0
+    passIfHadBallTimeMin: 5
+    passIfHadBallTimeMax: 10
+    passIfOpponentSlideNear: 3
+    ignoreSlideAngle: 0
+    slideTackleSuccessChance: 65
+    slideIntervals: 1
+    slideFromBehindDelay: 3
+    forceSlideAfterPasses: 4
+    canSlideKickingOpponent: 0
+    canChangeSlideDirection: 0
+    chanceDiveSave: 50
+    startDiveAtOpponentDistance: 10
+    looseReactTime: 3
+    looseReactSpeedMin: 5
+    canMarkPlayers: 1
+    startMarkDistance: 10
+    markDistanceTooClose: 3
+    checkNearestToBallerTime: 2
+    markDistanceMin: 1
+    markDistanceMax: 2
+    delayMoveTooCloseToTarget: 1
+    chanceSideStep: 10
+    sideStepDistance: 3
+    startSideStepDistance: 5
+    sideStepReduceDistance: 3
+    sideStepTimeMax: 2
+    delaySideStepTimeMax: 3
+    preferredOpenRadius: 5
+    searchAheadArc: 100
+    searchArcRadiusMin: 15
+    searchArcRadiusMax: 30
+    gkCasualFollowBallDelay: 0.3
+    gkStayNearCentreOfGoalArea: 0
+    changeDirectionIntervals: 0.2
+    tooCloseToBallerDist: 2
+--- !u!1 &138330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 484794}
+  m_Layer: 9
+  m_Name: Skills
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &484794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138330}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 484346}
+  - {fileID: 472918}
+  - {fileID: 465678}
+  - {fileID: 499094}
+  m_Father: {fileID: 484934}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &153310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 465678}
+  - component: {fileID: 11400548}
+  m_Layer: 9
+  m_Name: AI Team - Medium
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &465678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153310}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484794}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c44cbc66954d8484a96a53fef6039e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: AI Team - Medium
+  whenToUseSkill: 4
+  useForDifficulty: 1
+  runSpeed: 7
+  sprintSpeed: 9
+  sprintAnimationSpeedScale: 2
+  runFromGoalkeeperSpeed: 12
+  slideTackleSpeed: 7
+  diveSpeed: 10
+  maxDiveUpSpeed: 7
+  turnSpeed: 400
+  maxShootSpeed: 25
+  maxPassSpeed: 20
+  maxHeaderSpeed: 20
+  maxThrowSpeed: 20
+  canPassWithinAngle: 70
+  passBadChance: 0
+  passAccuracyRadius: 0
+  chanceRandomAimAtGoal: 10
+  chanceShootFromOwnGoal: 0
+  chanceShootFromHalfway: 10
+  chanceShootFromZone6: 15
+  chanceShootBeforeZone8: 30
+  shootBadChance: 0
+  shootAccuracyRadius: 0
+  canSlideTackle: 1
+  slideTackleDistance: 3.5
+  startSlideDistance: 10
+  validSlideAngle: 90
+  canGetBallWhileSliding: 1
+  canChangeSlideDirection: 0
+  canSlideGoalkeeperWithBall: 0
+  diveHangTime: 0.1
+  maxDiveDistance: 5
+  diveIntervals: 0.1
+  nextDiveDelay: 1
+  humanChanceDiveSave: 90
+  chanceGoalkeeperPunchBack: 10
+  chanceGoalkeeperPunchForward: 20
+  ballDribbleDistanceMin: 0.5
+  ballDribbleDistanceMax: 1.5
+  ballDribbleSideDistance: 0.2
+  ballDribbleKickSpeed: 15
+  lieOnGroundDuration: 1
+  ai:
+    shootPastZone: 5
+    ignoreAngleWhenShooting: 1
+    chanceShootInGoalArea: 100
+    canShootIfForemostPlayer: 0
+    chancePassToForemostPlayer: 20
+    shootDelayMin: 0.5
+    shootDelayMax: 1
+    holdBallBeforePassTime: 1
+    alwaysPassForward: 0
+    passIfHadBallTimeMin: 5
+    passIfHadBallTimeMax: 10
+    passIfOpponentSlideNear: 3
+    ignoreSlideAngle: 1
+    slideTackleSuccessChance: 75
+    slideIntervals: 1
+    slideFromBehindDelay: 3
+    forceSlideAfterPasses: 4
+    canSlideKickingOpponent: 0
+    canChangeSlideDirection: 0
+    chanceDiveSave: 50
+    startDiveAtOpponentDistance: 10
+    looseReactTime: 3
+    looseReactSpeedMin: 5
+    canMarkPlayers: 1
+    startMarkDistance: 10
+    markDistanceTooClose: 3
+    checkNearestToBallerTime: 2
+    markDistanceMin: 1
+    markDistanceMax: 2
+    delayMoveTooCloseToTarget: 1
+    chanceSideStep: 60
+    sideStepDistance: 3
+    startSideStepDistance: 5
+    sideStepReduceDistance: 3
+    sideStepTimeMax: 2
+    delaySideStepTimeMax: 3
+    preferredOpenRadius: 5
+    searchAheadArc: 100
+    searchArcRadiusMin: 15
+    searchArcRadiusMax: 30
+    gkCasualFollowBallDelay: 0.3
+    gkStayNearCentreOfGoalArea: 0
+    changeDirectionIntervals: 0.2
+    tooCloseToBallerDist: 2
+--- !u!1 &159088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 484346}
+  - component: {fileID: 11491534}
+  m_Layer: 9
+  m_Name: Human Team
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &484346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159088}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484794}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11491534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c44cbc66954d8484a96a53fef6039e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: Human Team
+  whenToUseSkill: 1
+  useForDifficulty: 0
+  runSpeed: 7
+  sprintSpeed: 9
+  sprintAnimationSpeedScale: 2
+  runFromGoalkeeperSpeed: 12
+  slideTackleSpeed: 7
+  diveSpeed: 10
+  maxDiveUpSpeed: 7
+  turnSpeed: 400
+  maxShootSpeed: 25
+  maxPassSpeed: 20
+  maxHeaderSpeed: 20
+  maxThrowSpeed: 20
+  canPassWithinAngle: 70
+  passBadChance: 0
+  passAccuracyRadius: 0
+  chanceRandomAimAtGoal: 10
+  chanceShootFromOwnGoal: 0
+  chanceShootFromHalfway: 10
+  chanceShootFromZone6: 15
+  chanceShootBeforeZone8: 30
+  shootBadChance: 0
+  shootAccuracyRadius: 0
+  canSlideTackle: 1
+  slideTackleDistance: 4
+  startSlideDistance: 10
+  validSlideAngle: 90
+  canGetBallWhileSliding: 1
+  canChangeSlideDirection: 0
+  canSlideGoalkeeperWithBall: 0
+  diveHangTime: 0.1
+  maxDiveDistance: 5
+  diveIntervals: 0.1
+  nextDiveDelay: 1
+  humanChanceDiveSave: 90
+  chanceGoalkeeperPunchBack: 10
+  chanceGoalkeeperPunchForward: 20
+  ballDribbleDistanceMin: 0.5
+  ballDribbleDistanceMax: 1.5
+  ballDribbleSideDistance: 0.2
+  ballDribbleKickSpeed: 15
+  lieOnGroundDuration: 1
+  ai:
+    shootPastZone: 5
+    ignoreAngleWhenShooting: 0
+    chanceShootInGoalArea: 100
+    canShootIfForemostPlayer: 0
+    chancePassToForemostPlayer: 20
+    shootDelayMin: 0.5
+    shootDelayMax: 1
+    holdBallBeforePassTime: 1
+    alwaysPassForward: 0
+    passIfHadBallTimeMin: 5
+    passIfHadBallTimeMax: 10
+    passIfOpponentSlideNear: 3
+    ignoreSlideAngle: 1
+    slideTackleSuccessChance: 80
+    slideIntervals: 1
+    slideFromBehindDelay: 3
+    forceSlideAfterPasses: 4
+    canSlideKickingOpponent: 0
+    canChangeSlideDirection: 1
+    chanceDiveSave: 50
+    startDiveAtOpponentDistance: 10
+    looseReactTime: 3
+    looseReactSpeedMin: 5
+    canMarkPlayers: 1
+    startMarkDistance: 10
+    markDistanceTooClose: 3
+    checkNearestToBallerTime: 2
+    markDistanceMin: 1
+    markDistanceMax: 2
+    delayMoveTooCloseToTarget: 1
+    chanceSideStep: 60
+    sideStepDistance: 3
+    startSideStepDistance: 5
+    sideStepReduceDistance: 3
+    sideStepTimeMax: 2
+    delaySideStepTimeMax: 3
+    preferredOpenRadius: 5
+    searchAheadArc: 100
+    searchArcRadiusMin: 15
+    searchArcRadiusMax: 30
+    gkCasualFollowBallDelay: 0.3
+    gkStayNearCentreOfGoalArea: 0
+    changeDirectionIntervals: 0.2
+    tooCloseToBallerDist: 2
+--- !u!1 &171434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 473352}
+  - component: {fileID: 6559692}
+  m_Layer: 9
+  m_Name: Ball Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &473352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484934}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6559692
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171434}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.5, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!1 &183518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 499094}
+  - component: {fileID: 11405052}
+  m_Layer: 9
+  m_Name: AI Team - Difficult
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &499094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183518}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484794}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11405052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c44cbc66954d8484a96a53fef6039e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: AI Team - Difficult
+  whenToUseSkill: 4
+  useForDifficulty: 2
+  runSpeed: 7.5
+  sprintSpeed: 9
+  sprintAnimationSpeedScale: 2
+  runFromGoalkeeperSpeed: 12
+  slideTackleSpeed: 7
+  diveSpeed: 10
+  maxDiveUpSpeed: 7
+  turnSpeed: 420
+  maxShootSpeed: 26
+  maxPassSpeed: 20
+  maxHeaderSpeed: 20
+  maxThrowSpeed: 20
+  canPassWithinAngle: 90
+  passBadChance: 0
+  passAccuracyRadius: 0
+  chanceRandomAimAtGoal: 0
+  chanceShootFromOwnGoal: 5
+  chanceShootFromHalfway: 10
+  chanceShootFromZone6: 15
+  chanceShootBeforeZone8: 30
+  shootBadChance: 0
+  shootAccuracyRadius: 0
+  canSlideTackle: 1
+  slideTackleDistance: 4
+  startSlideDistance: 10
+  validSlideAngle: 90
+  canGetBallWhileSliding: 1
+  canChangeSlideDirection: 0
+  canSlideGoalkeeperWithBall: 0
+  diveHangTime: 0.1
+  maxDiveDistance: 5
+  diveIntervals: 0.1
+  nextDiveDelay: 1
+  humanChanceDiveSave: 90
+  chanceGoalkeeperPunchBack: 10
+  chanceGoalkeeperPunchForward: 20
+  ballDribbleDistanceMin: 0.5
+  ballDribbleDistanceMax: 1.5
+  ballDribbleSideDistance: 0.2
+  ballDribbleKickSpeed: 15
+  lieOnGroundDuration: 1
+  ai:
+    shootPastZone: 6
+    ignoreAngleWhenShooting: 1
+    chanceShootInGoalArea: 100
+    canShootIfForemostPlayer: 1
+    chancePassToForemostPlayer: 20
+    shootDelayMin: 0.5
+    shootDelayMax: 1
+    holdBallBeforePassTime: 1
+    alwaysPassForward: 0
+    passIfHadBallTimeMin: 4
+    passIfHadBallTimeMax: 9
+    passIfOpponentSlideNear: 3
+    ignoreSlideAngle: 1
+    slideTackleSuccessChance: 80
+    slideIntervals: 1
+    slideFromBehindDelay: 3
+    forceSlideAfterPasses: 4
+    canSlideKickingOpponent: 0
+    canChangeSlideDirection: 1
+    chanceDiveSave: 50
+    startDiveAtOpponentDistance: 10
+    looseReactTime: 3
+    looseReactSpeedMin: 5
+    canMarkPlayers: 1
+    startMarkDistance: 10
+    markDistanceTooClose: 3
+    checkNearestToBallerTime: 2
+    markDistanceMin: 1
+    markDistanceMax: 2
+    delayMoveTooCloseToTarget: 1
+    chanceSideStep: 60
+    sideStepDistance: 3
+    startSideStepDistance: 5
+    sideStepReduceDistance: 3
+    sideStepTimeMax: 2
+    delaySideStepTimeMax: 3
+    preferredOpenRadius: 5
+    searchAheadArc: 100
+    searchArcRadiusMin: 15
+    searchArcRadiusMax: 30
+    gkCasualFollowBallDelay: 0.3
+    gkStayNearCentreOfGoalArea: 0
+    changeDirectionIntervals: 0.2
+    tooCloseToBallerDist: 2

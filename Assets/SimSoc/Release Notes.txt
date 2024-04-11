@@ -1,0 +1,66 @@
+
+Simple Soccer Football Kit - Release Notes
+==========================================
+
+Version 1.0.3
+-------------
+
+Added World Cup tournament.
+
+Wrapped all OnGUI methods with "#if SIMSOC_ENABLE_ONGUI" so they can be turned off, because they generate garbage.
+
+
+
+
+Version 1.0.2
+-------------
+
+Upgraded the project to Unity 2019.4.20f.
+
+
+
+
+Version 1.0.1
+-------------
+
+Camera:
+Can be positioned on any side of the field, changing the direction of the match. Example: Default goal posts are on the left and right side, but they can be set to be at the top and bottom. This is set via the “Play Direction” and “Follow Offset” properties on the camera.
+Added additional math camera prefabs for the combinations of: side view, top down view, and the different sides of the field.
+
+Control markers per player position (optional). Example: The defender's control marker can look different to the midfielder's control marker. These are set on the Match Prefabs prefab.
+
+Added fake shadows (optional). This is mainly for performance reasons on mobile devices. The default shadows are each a simple quad with a texture. It can be set per team or per player, and also for the ball.  Shadow prefabs are located in the folder: SimSoc\Prefabs\Shadows
+
+UI helper script to change all the button images on menus: Scripts\UI\Helpers\SsChangeButtonImages.cs
+
+Mouse input: Option to pass to mouse position.
+
+Fixed some of the audio to work with WebGL.
+
+Players:
+Added property TackledAngle. Can be used to determine from which direction a player was tackled.
+Changed private variables to protected.
+Changed most methods to virtual.
+
+Teams:
+Changed private variables to protected.
+Changed most methods to virtual.
+
+Balls:
+Changed private variables to protected.
+Changed most methods to virtual.
+
+
+
+
+Version 1.0.0
+-------------
+
+First release on website.
+8 teams: Blue, Brown, Green, Orange, Pink, Purple, Red, Yellow
+5 players per team
+2 fields: Blue, Red
+3 balls: Beach, Generic, Metal
+
+
+

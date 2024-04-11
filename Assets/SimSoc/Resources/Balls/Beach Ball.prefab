@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &173512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 488878}
+  - component: {fileID: 11416034}
+  - component: {fileID: 13508660}
+  - component: {fileID: 5441192}
+  - component: {fileID: 11431184}
+  - component: {fileID: 11475990}
+  m_Layer: 10
+  m_Name: Beach Ball
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &488878
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11416034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7381b64d13f2b344797953c9b7f334a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: beach
+  displayName: 
+  scaleForces: 1
+  radius: 0
+  meshPrefab: {fileID: 100000, guid: e52ff1fdae3d3c247b3f68a86c9f1a6a, type: 3}
+  meshOffsetPosition: {x: 0, y: 0, z: 0}
+  meshOffsetRotation: {x: 0, y: 0, z: 0}
+  visibilityCollider: {fileID: 0}
+  fakeShadowPrefab: {fileID: 0}
+--- !u!135 &13508660
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173512}
+  m_Material: {fileID: 13400000, guid: 7038eabd4087a8a419402a2acf6d7217, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5441192
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173512}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &11431184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76682cf8ce940c64fa136a87ea85c53a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  use2dAudio: 1
+  audioVolume: 1
+  kickNear: {fileID: 8300000, guid: a1c8b7a80fdc04b44946d4dd6bd03d51, type: 3}
+  kickMedium: {fileID: 8300000, guid: a1c8b7a80fdc04b44946d4dd6bd03d51, type: 3}
+  kickFar: {fileID: 8300000, guid: 9657a5ebd0b4d804b871f39e60637acf, type: 3}
+  punch: {fileID: 8300000, guid: 3bf50e810c9537b438e746e92ecde784, type: 3}
+  header: {fileID: 8300000, guid: 72d548bb8802604409a16e3948d7677c, type: 3}
+  throwIn: {fileID: 8300000, guid: a1c8b7a80fdc04b44946d4dd6bd03d51, type: 3}
+  bounceGround: {fileID: 8300000, guid: 7d9c5a68310d92641b9f0c4e8a340dc9, type: 3}
+  minHeightForBounceSfx: 0.3
+  goalkeeperCatch: {fileID: 8300000, guid: 7fb71e4ede7de1b4e87132d42167d15b, type: 3}
+  goalkeeperThrowNear: {fileID: 8300000, guid: a1c8b7a80fdc04b44946d4dd6bd03d51, type: 3}
+  goalkeeperThrowMedium: {fileID: 8300000, guid: a1c8b7a80fdc04b44946d4dd6bd03d51,
+    type: 3}
+  goalkeeperThrowFar: {fileID: 8300000, guid: 9657a5ebd0b4d804b871f39e60637acf, type: 3}
+--- !u!114 &11475990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405f15dd034dbf14d8bac4e18661a099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotAtGoalPrefab: {fileID: 19821874, guid: fe65018584c675343acbe37d1a19c256, type: 3}

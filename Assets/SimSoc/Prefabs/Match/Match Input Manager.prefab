@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &101066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 455614}
+  - component: {fileID: 11488368}
+  m_Layer: 0
+  m_Name: Match Input Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &455614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101066}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11488368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d9541ea7ee0ec4fb7402ee5c96ce4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  multiTouchEnabled: 1
+  simulateMouseWithTouches: 0
+  accelerometerDeadzone: 0.05
+  passToMousePlayerRadius: 2
+  passToMousePlayerUpdateDelay: 0.5
+  keyboardHorizontalAxes: Horizontal
+  keyboardVerticalAxes: Vertical
+  keyboardFire1: Fire1
+  keyboardFire2: Fire2
+  keyboardFire3: Fire3
+  mouseFire1: Mouse_Fire1
+  mouseFire2: Mouse_Fire2
+  mouseFire3: Mouse_Fire3
+  anyJoystickHorizontalAxes: JX_Horizontal
+  anyJoystickVerticalAxes: JX_Vertical
+  anyJoystickFire1: JX_Fire1
+  anyJoystickFire2: JX_Fire2
+  anyJoystickFire3: JX_Fire3
+  joystick1HorizontalAxes: J1_Horizontal
+  joystick1VerticalAxes: J1_Vertical
+  joystick1Fire1: J1_Fire1
+  joystick1Fire2: J1_Fire2
+  joystick1Fire3: J1_Fire3
+  joystick2HorizontalAxes: J2_Horizontal
+  joystick2VerticalAxes: J2_Vertical
+  joystick2Fire1: J2_Fire1
+  joystick2Fire2: J2_Fire2
+  joystick2Fire3: J2_Fire3
+  sprintTimeMax: 2
+  sprintRefillDelayMax: 5
+  sprintRefillSpeed: 10

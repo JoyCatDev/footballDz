@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &173566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 463908}
+  - component: {fileID: 11433952}
+  m_Layer: 0
+  m_Name: Match Prefabs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &463908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11433952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfcaa1ff6672f3c408f3f4b270f2a5a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 8300000, guid: 0e796c12164abbb4c82c8d948a8b7e43, type: 3}
+  musicVolume: 0.5
+  use2dAudio: 1
+  loopMusic: 1
+  sfxVolume: 1
+  sfxBallOut: {fileID: 8300000, guid: 31e2b4c0692469144bfdf3c1207d3810, type: 3}
+  sfxShootBall: {fileID: 0}
+  sfxScoreGoal: {fileID: 8300000, guid: 31e2b4c0692469144bfdf3c1207d3810, type: 3}
+  sfxWhistleKickoff: {fileID: 8300000, guid: 31e2b4c0692469144bfdf3c1207d3810, type: 3}
+  sfxWhistleHalfTime: {fileID: 8300000, guid: 31e2b4c0692469144bfdf3c1207d3810, type: 3}
+  sfxWhistleFullTime: {fileID: 8300000, guid: 31e2b4c0692469144bfdf3c1207d3810, type: 3}
+  matchCamera: {fileID: 11419934, guid: ecdeb419fa60c204e9c7671b840fec48, type: 3}
+  matchInputManager: {fileID: 11488368, guid: 76a60b2a817bc7e42a027980ac60dbc5, type: 3}
+  markerControl: {fileID: 100000, guid: c0c8bab6441656c4297b8a1939bc69a4, type: 3}
+  markerControlBall: {fileID: 100000, guid: a924c3109b0a8dd4fa08e138a6ebf870, type: 3}
+  markerControlBallDefender: {fileID: 0}
+  markerControlBallMidfielder: {fileID: 0}
+  markerControlBallForward: {fileID: 0}
+  markerPass: {fileID: 100000, guid: 9f734c95d14f6184caf21b7dea81a8ff, type: 3}
+  markerAiBall: {fileID: 100000, guid: 67779dc0abe19b74e8c8c18dd36d03d0, type: 3}
+  markerOut: {fileID: 100000, guid: f62dd9c4e66465545bf3e01b7c231d7a, type: 3}
+  markerMouse: {fileID: 100000, guid: d9bd576e7c18d514d9f9c76e2ccb0379, type: 3}
+  markerMouseRotateSpeed: 100
+  arrowControl: {fileID: 11496520, guid: 21aeb30315ced7141b327aa49d166565, type: 3}
+  arrowPass: {fileID: 11479424, guid: e113aa143d7633c4b8eaf615b26ce24c, type: 3}
+  eventSystemPrefab: {fileID: 11426428, guid: 3762a05c3598a254c96cc009dda21546, type: 3}
+  inGameMenus:
+  - {fileID: 166182, guid: 9f1bea2205f9969428e994c5a61536c7, type: 3}

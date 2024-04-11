@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &146922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 455208}
+  - component: {fileID: 11478130}
+  - component: {fileID: 1559475870788005801}
+  m_Layer: 0
+  m_Name: Match Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &455208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11478130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72c4c865e586a849953d34efc45ca99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveLoadSettings: 1
+  maxBallHeight: 30
+  tournamentSettings:
+  - id: log short
+    displayName: League of 4 Teams
+    type: 1
+    maxTeams: 4
+    numFaceEachOther: 2
+    humansInSameGroupChance: 10
+    humansInSameMatchChance: 10
+    fieldSelectSequence: 0
+    maxAiDifficulty: 2
+  - id: log medium
+    displayName: League of 6 Teams
+    type: 1
+    maxTeams: 6
+    numFaceEachOther: 2
+    humansInSameGroupChance: 10
+    humansInSameMatchChance: 10
+    fieldSelectSequence: 0
+    maxAiDifficulty: 2
+  - id: elimination short
+    displayName: Elimination of 4 Teams
+    type: 2
+    maxTeams: 4
+    numFaceEachOther: 1
+    humansInSameGroupChance: 10
+    humansInSameMatchChance: 10
+    fieldSelectSequence: 0
+    maxAiDifficulty: 2
+  - id: elimination medium
+    displayName: Elimination of 8 Teams
+    type: 2
+    maxTeams: 8
+    numFaceEachOther: 1
+    humansInSameGroupChance: 10
+    humansInSameMatchChance: 10
+    fieldSelectSequence: 0
+    maxAiDifficulty: 2
+  numPlayersPerSide: 11
+  matchDifficulty: 0
+  matchDuration: 10
+--- !u!114 &1559475870788005801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e5042fac68e0046a8e74fff3d0a3b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: wc8teams
+  _displayName: World Cup Of 8 Teams
+  _fieldSelectSequence: 0
+  _maxAiDifficulty: 2
+  _preferHumanRank: 1
+  _pointsWin: 3
+  _pointsDraw: 1
+  _pointsLose: 0
+  _groupStage:
+    _numTeamsPerGroup: 4
+    _numGroups: 2
+    _humansInSameGroupChance: 30
+    _humansInSameMatchChance: 20
+  _playForThirdPlace: 1
+  _stateHeadings:
+  - _heading: GROUP STAGE
+    _state: 1
+  - _heading: ROUND OF 32
+    _state: 2
+  - _heading: ROUND OF 16
+    _state: 3
+  - _heading: QUARTER-FINALS
+    _state: 4
+  - _heading: SEMI-FINALS
+    _state: 5
+  - _heading: THIRD PLACE PLAY-OFF
+    _state: 6
+  - _heading: FINAL
+    _state: 7

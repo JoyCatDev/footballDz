@@ -1,0 +1,39 @@
+
+Simple Soccer Football Kit License - v1.0
+Copyright (c) 2016-2021 Gojo Entertainment
+
+
+1. Definitions.
+
+Gojo Entertainment is referred to as "the author".
+
+Simple Soccer Football Kit is referred to as "the software".
+
+Each licensee is addressed as "you".
+
+
+2. Basic Permissions.
+
+You may not distribute or sell the software or any part thereof. This may exclude code mentioned in the "Third party Licenses" section below, but check each third party license for their distribution requirements.
+
+You may use the software to make a soccer game in the Unity game engine. You may distribute or sell the soccer game.
+
+
+3. Disclaimer of Warranty.
+
+THERE IS NO WARRANTY FOR THE SOFTWARE, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE AUTHOR PROVIDES THE SOFTWARE “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE IS WITH YOU. SHOULD THE SOFTWARE PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+
+4. Limitation of Liability.
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL THE AUTHOR BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE SOFTWARE (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE SOFTWARE TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF THE AUTHOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE AUTHOR HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+
+
+5. Third party Licenses.
+
+5.1. The code in the folder "Assets\SimSoc\Scripts\InterceptCalc" was taken from "CodeProject.com", which uses the "The Code Project Open License (CPOL)" license. A copy of the license can be found in the folder.
+
+5.2. The method "CircleRectCollision" in "GeUtils.cs" was taken from "stackoverflow.com" and the Creative Commons license (CC BY-SA 4.0) applies:
+https://creativecommons.org/licenses/by-sa/4.0/
+
+
