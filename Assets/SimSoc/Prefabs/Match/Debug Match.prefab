@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teamPrefab1: {fileID: 11426992, guid: 2fd4e92a76a0b2946b5d6272d79496ed, type: 3}
-  teamInput1: 3
+  teamInput1: 7
   teamPrefab2: {fileID: 11494660, guid: 9bda4c28ffb62644cb5916a9e55fed3c, type: 3}
   teamInput2: 1
   ballPrefab: {fileID: 11416034, guid: 4793153e4488d134985dcee9e3dc91c3, type: 3}

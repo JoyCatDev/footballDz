@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SimSoc/Scenes/Fields/BlueField.unity
     guid: 6c13a20d11488f342892eedd519e9f3d
-  - enabled: 1
+  - enabled: 0
     path: Assets/SimSoc/Scenes/Fields/RedField.unity
     guid: 95098d16b5386554a941c84233fbd982
   m_configObjects: {}

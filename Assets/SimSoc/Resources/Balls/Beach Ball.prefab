@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 13508660}
   - component: {fileID: 5441192}
   - component: {fileID: 11431184}
-  - component: {fileID: 11475990}
   m_Layer: 10
   m_Name: Beach Ball
   m_TagString: Untagged
@@ -31,6 +30,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 5.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -110,19 +110,5 @@ MonoBehaviour:
   minHeightForBounceSfx: 0.3
   goalkeeperCatch: {fileID: 8300000, guid: 7fb71e4ede7de1b4e87132d42167d15b, type: 3}
   goalkeeperThrowNear: {fileID: 8300000, guid: a1c8b7a80fdc04b44946d4dd6bd03d51, type: 3}
-  goalkeeperThrowMedium: {fileID: 8300000, guid: a1c8b7a80fdc04b44946d4dd6bd03d51,
-    type: 3}
+  goalkeeperThrowMedium: {fileID: 8300000, guid: a1c8b7a80fdc04b44946d4dd6bd03d51, type: 3}
   goalkeeperThrowFar: {fileID: 8300000, guid: 9657a5ebd0b4d804b871f39e60637acf, type: 3}
---- !u!114 &11475990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 173512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 405f15dd034dbf14d8bac4e18661a099, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shotAtGoalPrefab: {fileID: 19821874, guid: fe65018584c675343acbe37d1a19c256, type: 3}

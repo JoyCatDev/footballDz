@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 978edb29767754d41ac1c0a9da2a8902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demoBuild: 1
+  demoBuild: 0
   demoPlayerTeams:
   - blue
   - red
@@ -52,8 +52,8 @@ MonoBehaviour:
   demoBallId: generic
   matchSettingsPrefab: {fileID: 11478130, guid: 62b595aabd8724f4b83fbc76fa0a5702, type: 3}
   platformGroups:
-  - group: 1
-    platforms: 0000000007000000
+  - group: 10
+    platforms: 0b0000000200000008000000
   - group: 2
     platforms: 000000000100000002000000030000000400000005000000070000000d00000011000000
   - group: 3
@@ -89,11 +89,11 @@ MonoBehaviour:
   - group: 18
     platforms: 0a0000001b000000
   platformInputs:
-  - groups: 02000000
-    platforms: 
-    inputTypes: 04000000030000000800000009000000
   - groups: 03000000
-    platforms: 
+    platforms: 0b000000
+    inputTypes: 04000000030000000700000009000000
+  - groups: 13000000
+    platforms: 0b000000
     inputTypes: 0700000006000000
   simulateRuntimePlatform: 0
   runtimePlatformToSimulate: 11

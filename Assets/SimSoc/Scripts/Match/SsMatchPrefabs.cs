@@ -172,8 +172,8 @@ public class SsMatchPrefabs : MonoBehaviour {
 		// Editor warnings
 		//----------------
 		if (matchPrefabs.matchCamera == null)
-		{
-			Debug.LogError("ERROR: Match Camera Prefab has not been set on the Match Prefabs.");
+		{/*
+			Debug.LogError("ERROR: Match Camera Prefab has not been set on the Match Prefabs.");*/
 		}
 		if (matchPrefabs.matchInputManager == null)
 		{
