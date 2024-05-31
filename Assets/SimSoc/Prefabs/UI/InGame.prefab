@@ -189,8 +189,8 @@ MonoBehaviour:
   doNotPlayHideSfx: 1
   rightHanded: {fileID: 108668}
   leftHanded: {fileID: 117338}
-  rightSprint: {fileID: 0}
-  leftSprint: {fileID: 0}
+  rightSprint: {fileID: 11401238}
+  leftSprint: {fileID: 11420122}
 --- !u!1 &102360
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,7 +654,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &22458234
 RectTransform:
   m_ObjectHideFlags: 0

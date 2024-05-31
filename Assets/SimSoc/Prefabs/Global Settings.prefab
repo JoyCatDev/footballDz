@@ -52,12 +52,12 @@ MonoBehaviour:
   demoBallId: generic
   matchSettingsPrefab: {fileID: 11478130, guid: 62b595aabd8724f4b83fbc76fa0a5702, type: 3}
   platformGroups:
-  - group: 10
-    platforms: 0b0000000200000008000000
+  - group: 1
+    platforms: 0000000007000000
   - group: 2
     platforms: 000000000100000002000000030000000400000005000000070000000d00000011000000
   - group: 3
-    platforms: 080000000b00000015000000
+    platforms: 080000000b000000
   - group: 4
     platforms: 030000000500000011000000
   - group: 5
@@ -90,11 +90,8 @@ MonoBehaviour:
     platforms: 0a0000001b000000
   platformInputs:
   - groups: 03000000
-    platforms: 0b000000
-    inputTypes: 04000000030000000700000009000000
-  - groups: 13000000
-    platforms: 0b000000
-    inputTypes: 0700000006000000
+    platforms: 0b00000008000000
+    inputTypes: 070000000a000000
   simulateRuntimePlatform: 0
   runtimePlatformToSimulate: 11
   logInfoToConsole: 0
